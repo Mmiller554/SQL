@@ -1,0 +1,21 @@
+CREATE TABLE Pet_Store (id INTEGER PRIMARY KEY, name TEXT, color TEXT, cost INTEGER, amount_sold INTEGER);
+
+INSERT INTO Pet_Store VALUES (1, "Python", "Green", 30, 2);
+INSERT INTO Pet_Store VALUES (2, "Birds", "Blue", 20, 8);
+INSERT INTO Pet_Store VALUES (3, "Rats", "Brown", 10, 6);
+INSERT INTO Pet_Store VALUES (4, "Mice", "White", 5, 16);
+INSERT INTO Pet_Store VALUES (5, "Turtles", "Green", 15, 4);
+INSERT INTO Pet_Store VALUES (6, "Turtles", "Red", 25, 2);
+INSERT INTO Pet_Store VALUES (7, "Chameleons", "Green", 50, 1);
+INSERT INTO Pet_Store VALUES (8, "Tarantuals", "Brown", 35, 2);
+INSERT INTO Pet_Store VALUES (9, "Dumpy_Frogs", "Green", 25, 8);
+INSERT INTO Pet_Store VALUES (10, "Dumpy_Frogs", "Blue", 45, 5);
+INSERT INTO Pet_Store VALUES (11, "Corn Snakes", "Red", 20, 16);
+INSERT INTO Pet_Store VALUES (12, "Corn Snakes", "Brown", 10, 2);
+INSERT INTO Pet_Store VALUES (13, "Corn Snakes", "Green", 14, 4);
+INSERT INTO Pet_Store VALUES (14, "Pack Man Frog", "Green", 50, 2);
+INSERT INTO Pet_Store VALUES (15, "Anoles", "Green", 5, 5);
+
+SELECT * FROM Pet_Store ORDER BY cost;
+
+SELECT SUM(cost) FROM Pet_Store;
